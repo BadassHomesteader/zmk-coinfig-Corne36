@@ -9,15 +9,34 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+    behaviors {
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N1>, <&kp N2>, <&kp N3>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &td0
+            >;
+        };
+    };
+};
+
+
+/ {
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 &trans   &kp Q        &kp W        &kp E         &kp R         &kp T              &kp Y         &kp U        &kp I         &kp O        &kp SEMI        &trans
@@ -26,7 +45,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 &trans &kp Z         &kp X         &kp C         &kp V         &kp B              &kp N         &kp M          &kp COMMA    &kp DOT     &kp QMARK        &trans
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                  &kp LGUI        &mo 1          &kp RET      &kp SPACE      &kp BSPC       &kp RALT
+                                  &kp LGUI        &mo 1          &kp RET      &kp SPACE      &kp BSPC       &td0
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
