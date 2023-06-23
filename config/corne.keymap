@@ -77,12 +77,14 @@
     layers = <0>; \
   };
 
-combos {
-  compatible = "zmk,combos";
+/ {
+    combos {
+      compatible = "zmk,combos";
   
-  COMBO(one, &kp ESC, 3 4 5)
-  COMBO(two, &kp N2, 6 7 8)
+      COMBO(one, &kp ESC, 3 4 5)
+      COMBO(two, &kp N2, 6 7 8)
 };
+  };
 
 ;/ {
 ;    combos {
