@@ -70,14 +70,20 @@
 // Combos
 // -----------------------------------------------------------------------------------------
 / {
-    combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <3 4 5>;
-            bindings = <&kp ESC>;
-        };
+  combos {
+    compatible = "zmk,combos";
+    combo_esc {
+      timeout-ms = <50>;
+      key-positions = <3 4 5>;
+      bindings = <&kp ESC>;
     };
+
+    combo_tab {
+      timeout-ms = <50>;
+      key-positions = <2 3 4>;
+      bindings = <&kp TAB>;
+    };
+  };
 };
 
 // -----------------------------------------------------------------------------------------
