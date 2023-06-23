@@ -9,8 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 &mt {
-  tapping-term-ms = <200>;
-  flavor = "tap-preferred";
+    tapping-term-ms = <400>;
 };
 
 // -----------------------------------------------------------------------------------------
