@@ -8,6 +8,14 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#define DEFAULT 0
+#define NUM   1
+#define SYS   2
+#define NAV   3
+#define FN   4
+#define MEH   5
+#define HYPER   6
+
 &mt {
     tapping-term-ms = <300>;
 };
@@ -68,13 +76,14 @@
 // -----------------------------------------------------------------------------------------
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+// |     
 &trans   &kp Q        &kp W        &kp E         &kp R         &kp T              &kp Y         &kp U        &kp I         &kp O        &kp SEMI        &trans
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-&trans &kp A         &kp S         &kp D         &kp F         &kp G              &kp H      &mt RCTRL J      &kp K      &mt RGUI L       &kp P          &trans
+&trans &kp A         &kp S         &kp D         &kp F         &kp G              &kp H      &mt RCTRL J  &mt RSHIFT K    &mt RGUI L       &kp P          &trans
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 &trans &kp Z         &kp X         &kp C         &kp V         &kp B              &kp N         &kp M          &kp COMMA    &kp DOT     &kp QMARK        &trans
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                  &kp LGUI        &mo 1          &kp RET      &kp SPACE      &kp BSPC      &mt LSHIFT A
+                                  &kp LGUI        &mo NUM       &kp RET      &kp SPACE      &kp BSPC      &mt LSHIFT A
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
