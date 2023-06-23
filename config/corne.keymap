@@ -19,7 +19,7 @@
 #define MEH   5
 #define HYPER   6
 
-#define HRML(k1,k2,k3) &ht LGUI k1 &ht LALT k2 &ht LCTRL k3
+
 
 // -----------------------------------------------------------------------------------------
 // Mod Tap
@@ -33,6 +33,16 @@
 // -----------------------------------------------------------------------------------------
 / {
     behaviors {
+        hm: homerow_mods {
+          compatible = "zmk,behavior-hold-tap";
+          label = "HOMEROW_MODS";
+          #binding-cells = <2>;
+          tapping-term-ms = <300>;
+          quick-tap-ms = <0>;
+          flavor = "tap-preferred";
+          bindings = <&kp>, <&kp>;
+        };
+
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
@@ -56,16 +66,7 @@
 // -----------------------------------------------------------------------------------------
 // Hold-Tap Behavior
 // -----------------------------------------------------------------------------------------
-ht:hold-tap {
-    compatible = "zmk,behavior-hold-tap";
-    label = "HOLD_TAP";
-    #binding-cells = <2>;
-    flavor = "tap-preferred";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <400>;
-    global-quick-tap;
-    bindings = <&kp>, <&kp>;
-};
+
 
 // -----------------------------------------------------------------------------------------
 // Combos
@@ -95,7 +96,7 @@ ht:hold-tap {
 // |     
 &trans   &kp Q        &kp W        &kp E         &kp R         &kp T              &kp Y         &kp U        &kp I         &kp O        &kp SEMI        &trans
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-&trans &kp A        HRML(S,          D,          F)         &kp G              &kp H      &kp J          &kp K          &kp L       &kp P          &trans
+&trans &kp A        &hm LGUI S         &kp D      &kp F         &kp G              &kp H      &kp J          &kp K          &kp L       &kp P          &trans
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 &trans &kp Z         &kp X         &kp C         &kp V         &kp B              &kp N         &kp M          &kp COMMA    &kp DOT     &kp QMARK        &trans
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
