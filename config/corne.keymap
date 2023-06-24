@@ -146,7 +146,7 @@
 &none     &mt LC(Z) Z   &mt LC(X) X   &mt LC(C) C   &mt LC(V) V      &kp B                                        &kp N         &kp M       &kp COMMA       &kp DOT     &kp QMARK        &none
 //      ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────╮  ╭─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                                |    Enter    |     Num     |    Shift    |  |    Space    |     Bksp    |     ?       |
-                                                   &htl SYM RET     &mo NUM     &kp LSHIFT        &kp SPACE &mt LC(BSPC) BSPC &htl NAV RET
+                                                   &htl SYM RET     &mo NUM     &kp LSHIFT        &kp SPACE      &kp BSPC    &htl NAV RET
 //                                                ╰─────────────┴─────────────┴─────────────╯  ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
