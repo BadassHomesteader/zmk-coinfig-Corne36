@@ -114,6 +114,13 @@
       layers = <0>;
     };
 
+    combo_CTRLdel {
+      timeout-ms = <50>;
+      key-positions = <37 40>;
+      bindings = <&kp LC(BSPC)>;
+      layers = <0>;
+    };
+
   };
 };
 
