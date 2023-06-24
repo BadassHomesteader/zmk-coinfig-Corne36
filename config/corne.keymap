@@ -91,6 +91,12 @@
       bindings = <&kp TAB>;
     };
 
+    combo_del {
+      timeout-ms = <50>;
+      key-positions = <7 8>;
+      bindings = <&kp TAB>;
+    };
+
   };
 };
 
