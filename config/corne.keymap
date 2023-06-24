@@ -45,6 +45,17 @@
           bindings = <&kp>, <&kp>;
         };
 
+    gqt: global-quick-tap {
+        compatible = "zmk,behavior-hold-tap";
+        label = "GLOBAL_QUICK_TAP";
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <200>;
+        quick-tap-ms = <125>;
+        global-quick-tap;
+        bindings = <&kp>, <&kp>;
+    };
+
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
@@ -98,7 +109,7 @@
     combo_del {
       timeout-ms = <50>;
       key-positions = <7 8>;
-      bindings = <&kp TAB>;
+      bindings = <&kp DEL>;
     };
 
   };
@@ -125,7 +136,7 @@
 &none     &mt LC(Z) Z   &mt LC(X) X   &mt LC(C) C   &mt LC(V) V      &kp B                                        &kp N         &kp M       &kp COMMA       &kp DOT     &kp QMARK        &none
 //      ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┬─────────────╮  ╭─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
 //                                                |    Enter    |     Num     |    Shift    |  |    Space    |     Bksp    |     ?       |
-                                                    &mt SYM RET     &mo NUM     &kp LSHIFT        &kp SPACE    &mt LC(BSPC) BSPC &mt LSHIFT A
+                                                   &gqt SYM RET     &mo NUM     &kp LSHIFT        &kp SPACE    &mt LC(BSPC) BSPC &mt LSHIFT A
 //                                                ╰─────────────┴─────────────┴─────────────╯  ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
