@@ -13,7 +13,7 @@
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #define DEFAULT 0
 #define NUM     1
-#define Sym     2
+#define SYM     2
 #define BT      3
 //#define Nav   3
 //#define FUNC   3
@@ -124,8 +124,8 @@
 //      |      Z      |      X      |      C      |      V      |      B      |                              |      N      |     M       |     ,       |       .     |      ?      | 
 &none     &mt LC(Z) Z   &mt LC(X) X   &mt LC(C) C   &mt LC(V) V      &kp B                                        &kp N         &kp M       &kp COMMA       &kp DOT     &kp QMARK        &none
 //      ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┬─────────────╮  ╭─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-//                                                |    Shift    |     Num     |    Enter    |  |    Space    |     Bksp    |     ?       |
-                                                     &kp LSHIFT     &mo NUM       &kp RET      &kp SPACE    &mt LC(BSPC) BSPC &mt LSHIFT A
+//                                                |    Enter    |     Num     |    Shift    |  |    Space    |     Bksp    |     ?       |
+                                                    &mt SYM RET     &mo NUM     &kp LSHIFT        &kp SPACE    &mt LC(BSPC) BSPC &mt LSHIFT A
 //                                                ╰─────────────┴─────────────┴─────────────╯  ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
@@ -160,17 +160,17 @@
                         bindings = <
 
 //      ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                              ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-//      |             |             |      _      |      =      |     5       |                              |      6      |     7       |     8       |      9      |     10      |   
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
+//      |             |             |             |             |             |                              |             |     7       |     8       |      9      |     1       |   
+&none      &kp EXCL      &kp AT         &kp HASH     &kp DLLR      &kp PRCNT                                    &kp CARET     &kp AMPS   &kp KP_MULTIPLY &kp LPAR         &kp RPAR    &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-//      |             |             |      *      |      +      |     17      |                              |      18     |     19      |     20      |      21     |     22      | 
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+//      |     @       |      $      |             |             |             |                              |             |     ?       |     ?       |      ?      |     ?       | 
+&none       &trans         &trans         &trans       &trans       &trans                                      &kp MINUS     &kp EQUAL     &kp LBKT      &kp RBKT       &kp BSLH    &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-//      |      25     |      26     |      /      |      -      |     29      |                              |      1      |     2       |     3       |      33     |     34      | 
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+//      |             |             |             |             |             |                              |             |     ?       |     ?       |      ?      |     ?       | 
+&none       &trans         &trans        &trans      &trans          &trans                                     &kp UNDER      &kp PLUS      &kp LBRC     &kp RBRC       &kp PIPE     &kp TILDE
 //      ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┬─────────────╮  ╭─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
 //                                                |      36     |     37      |     38      |  |     39      |      40     |     41      |
-                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+                                                     &trans        &trans       &trans              &trans        &trans       &trans 
 //                                                ╰─────────────┴─────────────┴─────────────╯  ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
