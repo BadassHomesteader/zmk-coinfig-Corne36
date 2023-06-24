@@ -45,7 +45,7 @@
           bindings = <&kp>, <&kp>;
         };
 
-    tdl: tap_dance_layer {
+    htl: tap_dance_layer {
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_LAYERS_R";
         #binding-cells = <2>;
@@ -150,7 +150,7 @@
 &none     &mt LC(Z) Z   &mt LC(X) X   &mt LC(C) C   &mt LC(V) V      &kp B                                        &kp N         &kp M       &kp COMMA       &kp DOT     &kp QMARK        &none
 //      ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┬─────────────╮  ╭─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
 //                                                |    Enter    |     Num     |    Shift    |  |    Space    |     Bksp    |     ?       |
-                                                   &tdl SYM RET     &mo NUM     &kp LSHIFT        &kp SPACE    &mt LC(BSPC) BSPC &mt LSHIFT A
+                                                   &htl SYM RET     &mo NUM     &kp LSHIFT        &kp SPACE    &mt LC(BSPC) BSPC &mt LSHIFT A
 //                                                ╰─────────────┴─────────────┴─────────────╯  ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
