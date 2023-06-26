@@ -160,7 +160,7 @@
                         bindings = <
 //      ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                              ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 //      |      Q      |     W       |      E      |      R      |     T       |                              |      Y      |     U       |     I       |      O      |     '       | 
-&none        &kp Q        &kp W         &kp E          &kp R         &kp T                                         &kp Y         &kp U        &kp I         &kp O        &kp SEMI        &none
+&none        &kp Q        &kp W         &kp E          &kp R         &kp T                                         &kp Y         &kp U        &kp I         &kp O        &kp SQT        &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //      |      A      |      S      |      D      |      F      |     G       |                              |      H      |     J       |     K       |      L      |     P       |  
 &none      &kp A        &hm LGUI S    &hm LALT D    &hm LCTRL F      &kp G                                        &kp H      &hm RCTRL J    &hm RALT K    &hm RGUI L  &ht5 PSCRN P        &none
