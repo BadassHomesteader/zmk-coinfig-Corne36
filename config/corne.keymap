@@ -124,13 +124,6 @@
       layers = <0>;
     };
 
-    combo_tab {
-      timeout-ms = <50>;
-      key-positions = <2 3 4>;
-      bindings = <&kp TAB>;
-      layers = <0>;
-    };
-
     combo_del {
       timeout-ms = <50>;
       key-positions = <7 8>;
@@ -139,46 +132,52 @@
     };
 
     combo_CTRLdel {
-      timeout-ms = <50>;
-      key-positions = <37 40>;
-      bindings = <&kp LC(BSPC)>;
-      layers = <0>;
+        timeout-ms = <50>;
+        key-positions = <37 40>;
+        bindings = <&kp LC(BSPC)>;
+        layers = <0>;
     };
 
     combo_to1 {
         timeout-ms = <50>;
         key-positions = <1 30>;
         bindings = <&to NUM>;
+        layers = <0>;
     };
 
     combo_to2 {
         timeout-ms = <50>;
         key-positions = <1 31>;
         bindings = <&to SYM>;
+        layers = <0>;
     };
 
     combo_to3 {
         timeout-ms = <50>;
         key-positions = <1 32>;
         bindings = <&to NAV>;
+        layers = <0>;
     };
 
     combo_to4 {
         timeout-ms = <50>;
         key-positions = <1 18>;
         bindings = <&to FUNC>;
+        layers = <0>;
     };
 
     combo_to5 {
         timeout-ms = <50>;
         key-positions = <1 19>;
         bindings = <&to HYPER>;
+        layers = <0>;
     };
 
     combo_to6 {
         timeout-ms = <50>;
         key-positions = <5 6>;
         bindings = <&kp N0>;
+        layers = <0>;
     };
 
   };
