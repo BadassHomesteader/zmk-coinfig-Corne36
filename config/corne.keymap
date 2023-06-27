@@ -97,6 +97,15 @@
         tapping-term-ms = <200>;
         bindings = <&kp N1>, <&kp N2>, <&kp N3>;
         };
+
+    tdn: tap_dance_num {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TAP_DANCE_0";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&mo NUM>, <&to NUM>;
+        };
+
     };
 
 };
@@ -168,7 +177,7 @@
 &none    &ht5 LC(Z) Z  &ht5 LC(X) X  &ht5 LC(C) C  &ht6 LC(V) V      &kp B                                        &kp N         &kp M       &kp COMMA       &kp DOT     &kp QMARK        &none
 //      ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────╮  ╭─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                                |    Enter    |     Num     |    Shift    |  |    Space    |     Bksp    |     ?       |
-                                                   &htl SYM RET     &mo NUM     &kp LSHIFT   &ht5 LC(LS(LALT)) SPACE  &kp BSPC    &htl NAV RET
+                                                   &htl SYM RET     &tdn     &kp LSHIFT   &ht5 LC(LS(LALT)) SPACE  &kp BSPC    &htl NAV RET
 //                                                ╰─────────────┴─────────────┴─────────────╯  ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
