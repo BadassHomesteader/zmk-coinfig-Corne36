@@ -232,17 +232,16 @@
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------
                 sym_layer {
-                        bindings = <
-
+                        bindings = <              
 //      ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                              ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-//      |     DEF     |     @       |      #      |       $     |     %       |                              |       ^     |     &       |     *       |      (      |     )       |   
-&none     &to DEFAULT     &kp AT         &kp HASH     &kp DLLR      &kp PRCNT                                    &kp CARET     &kp AMPS   &kp KP_MULTIPLY &kp LPAR         &kp RPAR    &none
+//      |     DEF     |             |      ~      |      ^      |             |                              |             |     [       |     ]       |     !       |      |      |   
+&none     &to DEFAULT     &none         &kp TILDE     &kp CARET       &none                                        &none       &kp LBKT     &kp RBKT       &kp EXCL        &kp PIPE    &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-//      |     @       |      $      |       !     |             |             |                              |       -      |     =      |     [       |      ]      |     \       | 
-&none       &trans         &trans       &kp EXCL       &trans       &trans                                      &kp MINUS     &kp EQUAL     &kp LBKT      &kp RBKT       &kp BSLH    &none
+//      |     @       |      $      |      #      |       &     |             |                              |             |     (       |     )       |      /      |     \       | 
+&none       &kp AT       &kp DLLR        &kp HASH      &kp AMPS       &none                                        &none        &kp LPAR     &kp RPAR      &kp FSLH     &kp BSLH      &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-//      |             |             |             |             |             |                              |      _       |     +      |     {       |      }      |     |       |     ~
-&none       &trans         &trans        &trans      &trans          &trans                                     &kp UNDER      &kp PLUS      &kp LBRC     &kp RBRC       &kp PIPE     &kp TILDE
+//      |             |             |     %       |      %      |             |                              |             |     {       |     }       |      <      |     >       |     
+&none       &none         &none        &kp PRCNT      &kp PRCNT       &none                                        &none      &kp LBRC     &kp RBRC     &kp LESS_THAN  &kp GREATER_THAN  &none
 //      ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────╮  ╭─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                                |      36     |     37      |     38      |  |     39      |      40     |     41      |
                                                      &trans        &trans        &trans             &trans        &trans       &trans 
