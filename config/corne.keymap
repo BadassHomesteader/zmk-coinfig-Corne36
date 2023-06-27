@@ -177,7 +177,7 @@
 
     combo_to6 {
         timeout-ms = <50>;
-        key-positions = <1 13 25>;
+        key-positions = <1 13>;
         bindings = <&kp N0>;
     };
 
