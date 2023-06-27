@@ -148,7 +148,7 @@
     combo_3 {
         timeout-ms = <50>;
         key-positions = <1 13>;
-        bindings = <&to 3>;
+        bindings = <&to NUM>;
     };
 
   };
