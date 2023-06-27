@@ -237,11 +237,11 @@
 //      |     DEF     |             |      ~      |      ^      |             |                              |             |     [       |     ]       |     !       |      |      |   
 &none     &to DEFAULT     &none         &kp TILDE     &kp CARET       &none                                        &none       &kp LBKT     &kp RBKT       &kp EXCL        &kp PIPE    &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-//      |     @       |      $      |      #      |       &     |             |                              |             |     (       |     )       |      /      |     \       | 
-&none       &kp AT       &kp DLLR        &kp HASH      &kp AMPS       &none                                        &none        &kp LPAR     &kp RPAR      &kp FSLH     &kp BSLH      &none
+//      |     @       |      $      |      #      |       &     |      ;      |                              |             |     (       |     )       |      /      |     \       | 
+&none       &kp AT       &kp DLLR        &kp HASH      &kp AMPS  &kp SEMICOLON                                     &none        &kp LPAR     &kp RPAR      &kp FSLH     &kp BSLH      &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-//      |             |             |     %       |      %      |             |                              |             |     {       |     }       |      <      |     >       |     
-&none       &none         &none        &kp PRCNT      &kp PRCNT       &none                                        &none      &kp LBRC     &kp RBRC     &kp LESS_THAN  &kp GREATER_THAN  &none
+//      |             |             |     %       |      %      |       :     |                              |             |     {       |     }       |      <      |     >       |     
+&none       &none         &none        &kp PRCNT      &kp PRCNT    &kp COLON                                       &none      &kp LBRC     &kp RBRC     &kp LESS_THAN  &kp GREATER_THAN  &none
 //      ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────╮  ╭─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                                |      36     |     37      |     38      |  |     39      |      40     |     41      |
                                                      &trans        &trans        &trans             &trans        &trans       &trans 
