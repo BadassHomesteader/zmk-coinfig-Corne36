@@ -172,6 +172,12 @@
     combo_to5 {
         timeout-ms = <50>;
         key-positions = <1 19>;
+        bindings = <&to HYPER>;
+    };
+
+    combo_to6 {
+        timeout-ms = <50>;
+        key-positions = <1 20>;
         bindings = <&to BT>;
     };
 
