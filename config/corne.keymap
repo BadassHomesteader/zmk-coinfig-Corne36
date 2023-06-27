@@ -155,7 +155,7 @@
     combo_lmun {
       timeout-ms = <50>;
       key-positions = <0 12>;
-      bindings = <&to NUM>;
+      bindings = <&to 1>;
       layers = <0>;
     };
 
