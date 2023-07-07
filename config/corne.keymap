@@ -317,7 +317,7 @@
 &none        &none         &none         &none         &kp N5        &none                                       &none        &kp N5        &none         &none          &none            &none 
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //      |             |             |             |             |   Eligable  |                              |             |             |             |      ?      |     ?       |
-&none        &none         &none         &none         &none     &none                         &none        &none        &none         &none          &none              &none 
+&none        &none         &none         &none         &none     &kp LG(LS(LC(LA(B))))                        &none        &none        &none         &none          &none              &none 
 //      ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────╮  ╭─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                                |             |             |             |  |             |             |             |
                                                      &trans        &trans       &trans              &trans        &trans      &trans
