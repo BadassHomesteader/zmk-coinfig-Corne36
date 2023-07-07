@@ -311,13 +311,13 @@
                         bindings = <
 //      ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                              ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 //      |     DEF     |             |             |             |             |                              |             |             |             |             |             |   
-&none     &to DEFAULT         &none         &none        &kp N5        &none                                         &none        &none         &none         &none         &none         &none
+&none     &to DEFAULT         &none         &none        &kp N5   &kp LG(LS(LC(LA(U))))                          &none        &none         &none         &none         &none         &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-//      |             |             |             |             |             |                              |             |             |     ?       |      ?      |     ?       | 
-&none        &none         &none         &none         &kp N5        &none                                       &none        &kp N5        &none         &none          &none            &none 
+//      |             |             |             |             |    RTUx3    |                              |             |             |     ?       |      ?      |     ?       | 
+&none        &none         &none         &none         &kp N5     &kp LG(LS(LC(LA(G))))                          &none        &kp N5        &none         &none          &none            &none 
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //      |             |             |             |             |   Eligable  |                              |             |             |             |      ?      |     ?       |
-&none        &none         &none         &none         &none     &kp LG(LS(LC(LA(B))))                        &none        &none        &none         &none          &none              &none 
+&none        &none         &none         &none         &none      &kp LG(LS(LC(LA(B))))                         &none        &none        &none         &none          &none              &none 
 //      ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────╮  ╭─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                                |             |             |             |  |             |             |             |
                                                      &trans        &trans       &trans              &trans        &trans      &trans
