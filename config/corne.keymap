@@ -224,7 +224,7 @@
 &none     &ht4 LC(Z) Z  &ht4 LC(X) X  &ht4 LC(C) C  &ht5 LC(V) V      &kp B                                       &kp N         &kp M       &kp COMMA       &kp DOT     &kp QMARK       &none
 //      ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────╮  ╭─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                                |    Enter    |     Num     |    Shift    |  |    Space    |     Bksp    |  Enter Nav  |
-                                                   &htl SYM RET     &mo NUM     &kp LSHIFT   &ht5 LC(LS(LALT)) SPACE  &kp BSPC  &htl NAV RET
+                                                   &htl SYM RET &htl NUM LC(BSPC) &kp LSHIFT   &ht5 LC(LS(LALT)) SPACE  &kp BSPC  &htl NAV RET
 //                                                ╰─────────────┴─────────────┴─────────────╯  ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
