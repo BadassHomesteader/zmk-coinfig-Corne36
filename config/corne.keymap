@@ -4,7 +4,13 @@
  * SPDX-License-Identifier: MIT
  */
 
- // Last update 2023.06.29_1516
+// Last update 2023.07.07
+
+// wish list
+// window switcher via meh key space bar
+// add more hyper keys to layer
+// is there a way to define hyper vs having to do all keys like I am now
+//
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
