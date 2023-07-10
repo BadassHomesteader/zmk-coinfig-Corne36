@@ -209,14 +209,14 @@
         timeout-ms = <50>;
         key-positions = <31 32>;
         bindings = <&kp LS(LC(LA(N7)))>;
-        layers = <3>;
+        layers = <3 5>;
     };
 
     combo_mouse_r {
         timeout-ms = <50>;
         key-positions = <33 34>;
         bindings = <&kp LS(LC(LA(N9)))>;
-        layers = <3>;
+        layers = <3 5>;
     };
 
   };
