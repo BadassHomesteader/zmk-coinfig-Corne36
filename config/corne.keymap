@@ -293,13 +293,13 @@
                         bindings = <
 //      ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                              ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 //      |     DEF     |             |             |             |     //      |                              |    Pg Up    |             |             |             |             |   
-&none     &to DEFAULT      &none         &none         &none        &none                                         &none      &kp LC(HOME)   &kp HOME        &kp END     &kp LC(END)     &none
+&none     &to DEFAULT      &none         &none         &none        &none                                       &kp PG_UP   &kp LC(HOME)   &kp HOME        &kp END     &kp LC(END)     &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //      |             |             |             |             |      ;      |                              |     Tab     |    Left     |    Down     |     Up      |    Right    | 
 &none        &none         &none        &kp BSPC      &kp DEL   &kp SEMICOLON                                    &none        &kp LEFT       &kp DOWN    &kp UP        &kp RIGHT        &none         
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //      |             |             |             |             |             |                              |    Pg Dn    |    Left     |    Down     |     Up      |    Right    |
-&none        &none         &none         &none         &kp SPACE        &none                                     &none   &kp LS(LC(LA(N4))) &kp LS(LC(LA(N2))) &kp LS(LC(LA(N8))) &kp LS(LC(LA(N6)))  &none
+&none        &none         &none         &none         &kp SPACE        &none                                   &kp PG_DN   &kp LS(LC(LA(N4))) &kp LS(LC(LA(N2))) &kp LS(LC(LA(N8))) &kp LS(LC(LA(N6)))  &none
 //      ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────╮  ╭─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                                |      36     |     37      |     38      |  |     39      |      40     |             |
                                                      &trans        &trans       &trans              &trans        &trans       &none
