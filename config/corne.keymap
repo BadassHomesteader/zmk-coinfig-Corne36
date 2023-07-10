@@ -205,6 +205,13 @@
         layers = <0>;
     };
 
+    combo_mouse_l {
+        timeout-ms = <50>;
+        key-positions = <31 32>;
+        bindings = <&kp LS(LC(LA(N7)))>;
+        layers = <3>;
+    };
+
   };
 };
 
@@ -281,10 +288,10 @@
 //      |     DEF     |             |             |             |     //      |                              |    Pg Up    |             |             |             |             |   
 &none     &to DEFAULT      &none         &none         &none        &none                                         &none      &kp LC(HOME)   &kp HOME        &kp END     &kp LC(END)     &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-//      |             |             |             |             |      ;      |                              |     Tab     |             |             |      ?      |     ?       | 
+//      |             |             |             |             |      ;      |                              |     Tab     |    Left     |    Down     |     Up      |    Right    | 
 &none        &none         &none        &kp BSPC      &kp DEL   &kp SEMICOLON                                    &none        &kp LEFT       &kp DOWN    &kp UP        &kp RIGHT        &none         
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-//      |             |             |             |             |             |                              |    Pg Dn    |             |             |      ?      |     ?       |
+//      |             |             |             |             |             |                              |    Pg Dn    |    Left     |    Down     |     Up      |    Right    |
 &none        &none         &none         &none         &kp SPACE        &none                                     &none   &kp LS(LC(LA(N4))) &kp LS(LC(LA(N2))) &kp LS(LC(LA(N8))) &kp LS(LC(LA(N6)))  &none
 //      ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────╮  ╭─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                                |      36     |     37      |     38      |  |     39      |      40     |             |
