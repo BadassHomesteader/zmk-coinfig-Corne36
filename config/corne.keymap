@@ -273,8 +273,8 @@
                 sym_layer {
                         bindings = <              
 //      ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                              ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-//      |     DEF     |             |      ~      |      ^      |             |                              |             |     [       |     ]       |     !       |      |      |   
-&none     &to DEFAULT     &none         &kp TILDE     &kp CARET       &none                                        &none       &kp LBKT     &kp RBKT       &kp EXCL        &kp PIPE     &none
+//      |     DEF     |             |      ~      |      ^      |       ~     |                              |             |     [       |     ]       |     !       |      |      |   
+&none     &to DEFAULT     &none         &kp TILDE     &kp CARET    &kp TILDE                                       &none       &kp LBKT     &kp RBKT       &kp EXCL        &kp PIPE     &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //      |     @       |      $      |      #      |       &     |      ;      |                              |             |     (       |     )       |      /      |     \       | 
 &none       &kp AT       &kp DLLR        &kp HASH      &kp AMPS  &kp SEMICOLON                                     &none        &kp LPAR     &kp RPAR      &kp FSLH     &kp BSLH        &none
