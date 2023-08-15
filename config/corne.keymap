@@ -241,7 +241,7 @@
 &none      &kp A        &hm LGUI S    &hm LALT D    &hm LCTRL F      &kp G                                        &kp H      &hm RCTRL J    &hm RALT K    &hm RGUI L  &ht5 LC(PSCRN) P      &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //      |      Z      |      X      |      C      |      V      |      B      |                              |      N      |     M       |     ,       |       .     |      ?      | 
-&none     &ht4 LC(Z) Z  &ht4 LC(X) X  &ht4 LC(C) C  &ht5 LC(V) V      &kp B                                       &kp N         &kp M       &kp COMMA       &kp DOT     &kp QMARK       &none
+&none     &ht3 LC(Z) Z  &ht3 LC(X) X  &ht3 LC(C) C  &ht4 LC(V) V      &kp B                                       &kp N         &kp M       &kp COMMA       &kp DOT     &kp QMARK       &none
 //      ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────╮  ╭─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                                |    Enter    |     Num     |    Shift    |  |    Space    |     Bksp    |  Enter Nav  |
                                                    &htl SYM RET &htl NUM LC(BSPC) &kp LSHIFT   &ht5 LC(LS(LALT)) SPACE  &kp BSPC  &htl NAV RET
@@ -283,7 +283,7 @@
 &none       &none         &none        &kp PRCNT      &kp PRCNT    &kp COLON                                       &none      &kp LBRC     &kp RBRC     &kp LESS_THAN  &kp GREATER_THAN  &none
 //      ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────╮  ╭─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                                |             |             |             |  |             |             |             |
-                                                       &trans        &trans        &trans           &trans        &trans       &trans 
+                                                       &trans        &trans        &trans         &kp RCTRL        &trans       &trans 
 //                                                ╰─────────────┴─────────────┴─────────────╯  ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
