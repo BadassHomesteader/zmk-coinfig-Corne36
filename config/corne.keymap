@@ -243,8 +243,8 @@
 //      |      Z      |      X      |      C      |      V      |      B      |                              |      N      |     M       |     ,       |       .     |      ?      | 
 &none     &ht3 LC(Z) Z  &ht3 LC(X) X  &ht3 LC(C) C  &ht4 LC(V) V      &kp B                                       &kp N         &kp M       &kp COMMA       &kp DOT     &kp QMARK       &none
 //      ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────╮  ╭─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-//                                                |    Enter    |     Num     |    Shift    |  |    Space    |     Bksp    |  Enter Nav  |
-                                                   &htl SYM RET &htl NUM LC(BSPC) &kp LSHIFT   &ht5 LC(LS(LALT)) SPACE  &kp BSPC  &htl NAV RET
+//                                                |    Enter    |     Num     |    Shift    |  |    Space    |   Bksp NAV  |  Enter Nav  |
+                                                   &htl SYM RET &htl NUM LC(BSPC) &kp LSHIFT &ht5 LC(LS(LALT)) SPACE  &ht5 NAV BSPC  &htl NAV RET
 //                                                ╰─────────────┴─────────────┴─────────────╯  ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
@@ -302,7 +302,7 @@
 &none        &none         &none         &none         &kp SPACE        &none                                   &kp PG_DN   &kp LS(LC(LA(N4))) &kp LS(LC(LA(N2))) &kp LS(LC(LA(N8))) &kp LS(LC(LA(N6)))  &none
 //      ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────╮  ╭─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                                |      36     |     37      |     38      |  |     39      |      40     |             |
-                                                     &trans        &trans       &trans              &trans        &trans       &none
+                                                     &trans        &trans       &kp RCTRL           &trans        &trans       &none
 //                                                ╰─────────────┴─────────────┴─────────────╯  ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
