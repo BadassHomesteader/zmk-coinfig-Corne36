@@ -295,7 +295,7 @@
 &none     &to DEFAULT      &none         &none         &none        &none                                       &kp PG_UP   &kp LC(HOME)   &kp HOME        &kp END     &kp LC(END)     &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //      |             |             |             |             |      ;      |                              |     Tab     |    Left     |    Down     |     Up      |    Right    | 
-&none        &none         &none        &kp BSPC      &kp DEL   &kp SEMICOLON                                    &kp TAB      &kp LEFT      &kp DOWN       &kp UP        &kp RIGHT     &none         
+&none      &kp LC(A)     &kp LC(S)      &kp BSPC      &kp DEL   &kp SEMICOLON                                    &kp TAB      &kp LEFT      &kp DOWN       &kp UP        &kp RIGHT     &none         
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //      |             |             |             |             |             |                              |    Pg Dn    |    Left     |    Down     |     Up      |    Right    |
 &none      &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)       &none                                   &kp PG_DN   &kp LS(LC(LA(N4))) &kp LS(LC(LA(N2))) &kp LS(LC(LA(N8))) &kp LS(LC(LA(N6)))  &none
