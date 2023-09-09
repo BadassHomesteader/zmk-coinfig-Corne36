@@ -243,7 +243,7 @@
 &none     &ht3 LC(Z) Z  &ht3 LC(X) X  &ht3 LC(C) C  &ht4 LC(V) V      &kp B                                            &kp N         &kp M       &kp COMMA       &kp DOT     &kp QMARK        &none
 //      ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────╮       ╭─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                                |    Enter    |     Num     |    Shift    |       |    Space    |   Bksp NAV  |  Enter Nav  |
-                                                  &htl SYM RET  &htl NUM LC(BSPC) &kp LSHIFT    &hm LC(LS(LALT)) SPACE &htl NAV BSPC &htl FUNC RET
+                                                  &htl SYM RET  &htl NUM LC(BSPC) &kp LSHIFT    &hm LC(LS(LALT)) SPACE &htl NAV BSPC &htl HYPER RET
 //                                                ╰─────────────┴─────────────┴─────────────╯       ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
@@ -298,7 +298,7 @@
 &none        &none         &none        &kp BSPC      &kp DEL   &kp SEMICOLON                                    &kp TAB      &kp LEFT      &kp DOWN       &kp UP        &kp RIGHT     &none         
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //      |             |             |             |             |             |                              |    Pg Dn    |    Left     |    Down     |     Up      |    Right    |
-&none        &none         &none         &none         &kp SPACE        &none                                   &kp PG_DN   &kp LS(LC(LA(N4))) &kp LS(LC(LA(N2))) &kp LS(LC(LA(N8))) &kp LS(LC(LA(N6)))  &none
+&none      &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)       &none                                   &kp PG_DN   &kp LS(LC(LA(N4))) &kp LS(LC(LA(N2))) &kp LS(LC(LA(N8))) &kp LS(LC(LA(N6)))  &none
 //      ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────╮  ╭─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                                |             |             |             |  |             |             |             |
                                                      &trans        &kp RCTRL     &kp LSHIFT         &trans        &trans        &none
