@@ -243,7 +243,7 @@
 &none     &ht3 LC(Z) Z  &ht3 LC(X) X  &ht3 LC(C) C  &ht4 LC(V) V     &kp B                                            &kp N         &kp M       &kp COMMA       &kp DOT     &kp QMARK        &none
 //      ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────╮       ╭─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                                |    Enter    |     Num     |    Shift    |       |    Space    |   Bksp NAV  |  Enter Nav  |
-                                             &htl SYM RET  &htl NUM LC(BSPC) &hm LSHIFT LSHIFT   &hm LC(LS(LALT)) SPACE &htl NAV BSPC &htl HYPER RET
+                                             &htl SYM RET  &htl NUM LC(BSPC) &hm RSHIFT LSHIFT   &hm LC(LS(LALT)) SPACE &htl NAV BSPC &htl HYPER RET
 //                                                ╰─────────────┴─────────────┴─────────────╯       ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
