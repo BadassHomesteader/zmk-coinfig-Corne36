@@ -64,6 +64,17 @@
         bindings = <&kp>, <&kp>;
     };
 
+    ht2: hold-tap-200 {
+        compatible = "zmk,behavior-hold-tap";
+        label = "GLOBAL_QUICK_TAP";
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <200>;
+        quick-tap-ms = <125>;
+        global-quick-tap;
+        bindings = <&kp>, <&kp>;
+    };
+
     ht3: hold-tap-300 {
         compatible = "zmk,behavior-hold-tap";
         label = "GLOBAL_QUICK_TAP";
@@ -243,7 +254,7 @@
 &none     &ht3 LC(Z) Z  &ht3 LC(X) X  &ht3 LC(C) C  &ht4 LC(V) V     &kp B                                            &kp N         &kp M       &kp COMMA       &kp DOT     &kp QMARK        &none
 //      ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────╮       ╭─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                                |    Enter    |     Num     |    Shift    |       |    Space    |   Bksp NAV  |  Enter Nav  |
-                                             &htl SYM RET  &htl NUM LC(BSPC) &hm RSHIFT LSHIFT   &hm LC(LS(LALT)) SPACE &htl NAV BSPC &htl HYPER RET
+                                             &htl SYM RET  &htl NUM LC(BSPC) &ht2 RSHIFT LSHIFT   &hm LC(LS(LALT)) SPACE &htl NAV BSPC &htl HYPER RET
 //                                                ╰─────────────┴─────────────┴─────────────╯       ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
