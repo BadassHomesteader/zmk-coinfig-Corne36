@@ -264,13 +264,13 @@
                         bindings = <
 //      ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                              ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 //      |     DEF     |             |      _      |      =      |     5       |                              |      6      |     7       |     8       |      9      |     10      |      
-&none     &to DEFAULT      &none       &kp UNDER     &kp EQUAL     &kp DEL                                       &kp N7        &kp N8         &kp N9        &none         &none         &none
+&none     &to DEFAULT      &none       &kp UNDER     &kp EQUAL     &kp TAB                                       &kp N7        &kp N8         &kp N9        &none         &none         &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //      |             |             |      *      |      +      |     17      |                              |      4      |     5       |     6       |      21     |     22      |      
-&none       &none          &none    &kp KP_MULTIPLY  &kp PLUS      &kp TAB                                       &kp N4        &kp N5         &kp N6        &none         &none         &none
+&none       &none          &none    &kp KP_MULTIPLY  &kp PLUS      &kp LC(V)                                       &kp N4        &kp N5         &kp N6        &none         &none         &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //      |      ?      |      ?      |      /      |      -      |     29      |                              |      1      |     2       |     3       |      33     |     34      |      
-&none       &none          &none       &kp SLASH     &kp MINUS      &kp BSPC                                     &kp N1        &kp N2         &kp N3       &kp DOT        &none         &none
+&none       &none          &none       &kp SLASH     &kp MINUS      &kp LC(C)                                     &kp N1        &kp N2         &kp N3       &kp DOT        &none         &none
 //      ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────╮  ╭─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                                |             |             |             |  |             |             |             |
                                                      &trans        &trans       &trans              &trans      &trans         &kp N0
@@ -341,10 +341,10 @@
                         bindings = <
 //      ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                              ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 //      |     DEF     |             |             |             |    Export   |                              |    Pg Up    |  Ctrl Home  |   Home      |    End      |   Ctrl End  |   
-&none     &to DEFAULT         &none         &none      &kp N5    &kp LG(LS(LC(LA(U))))                          &kp PG_UP   &kp LC(HOME)   &kp HOME        &kp END     &kp LC(END)     &none
+&none     &to DEFAULT         &none         &none      &kp N    &kp LG(LS(LC(LA(U))))                          &kp PG_UP   &kp LC(HOME)   &kp HOME        &kp END     &kp LC(END)     &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //      |             |             |             |             |    RTUx3    |                              |     Tab     |    Left     |    Down     |     Up      |    Right    | 
-&none        &none         &none         &none         &kp N5    &kp LG(LS(LC(LA(G))))                          &kp TAB      &kp LEFT      &kp DOWN       &kp UP        &kp RIGHT     &none
+&none        &none         &none         &none         &kp Y    &kp LG(LS(LC(LA(G))))                          &kp TAB      &kp LEFT      &kp DOWN       &kp UP        &kp RIGHT     &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //      |             |             |             |             |   Eligable  |                              |    Pg Dn    |    Left     |    Down     |     Up      |    Right    |
 &none        &none         &none       &kp LC(C)      &kp LC(V)  &kp LG(LS(LC(LA(B))))                         &kp PG_DN   &kp LS(LC(LA(N4))) &kp LS(LC(LA(N2))) &kp LS(LC(LA(N8))) &kp LS(LC(LA(N6)))  &none
