@@ -166,6 +166,13 @@
       layers = <0>;
     };
 
+    combo_del {
+      timeout-ms = <50>;
+      key-positions = <1 13 25>;
+      bindings = <&kp DEL>;
+      layers = <0>;
+    };
+
     combo_CTRLdel {
         timeout-ms = <50>;
         key-positions = <37 40>;
