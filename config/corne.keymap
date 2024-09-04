@@ -180,35 +180,35 @@
         layers = <0>;
     };
 
-    combo_to2 {
+    combo_Layer_Sym {
         timeout-ms = <50>;
         key-positions = <1 31>;
         bindings = <&to SYM>;
         layers = <0>;
     };
 
-    combo_to3 {
+    combo_Layer_Nav {
         timeout-ms = <50>;
         key-positions = <1 32>;
         bindings = <&to NAV>;
         layers = <0>;
     };
 
-    combo_to4 {
+    combo_Layer_Func {
         timeout-ms = <50>;
         key-positions = <1 18>;
         bindings = <&to FUNC>;
         layers = <0>;
     };
 
-    combo_to5 {
+    combo_Layer_Hyber {
         timeout-ms = <50>;
         key-positions = <1 19>;
         bindings = <&to HYPER>;
         layers = <0>;
     };
 
-    combo_to6 {
+    combo_Layer_BT {
         timeout-ms = <50>;
         key-positions = <5 6>;
         bindings = <&to BT>;
