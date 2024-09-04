@@ -168,7 +168,7 @@
 
     combo_del2 {
       timeout-ms = <50>;
-      key-positions = <1 13 25>;
+      key-positions = <1 2>;
       bindings = <&kp DEL>;
       layers = <0>;
     };
