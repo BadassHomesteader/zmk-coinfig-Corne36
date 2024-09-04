@@ -201,7 +201,7 @@
         layers = <0>;
     };
 
-    combo_Layer_Hyber {
+    combo_Layer_Hyper {
         timeout-ms = <50>;
         key-positions = <1 19>;
         bindings = <&to HYPER>;
