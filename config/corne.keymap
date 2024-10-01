@@ -173,12 +173,12 @@
         layers = <0>;
     };
 
-    combo_Layer_Num {
-        timeout-ms = <50>;
-        key-positions = <30 31>;
-        bindings = <&to NUM>;
-        layers = <0>;
-    };
+    // combo_Layer_Num {
+    //     timeout-ms = <50>;
+    //     key-positions = <30 31>;
+    //     bindings = <&to NUM>;
+    //     layers = <0>;
+    // };
 
     combo_Layer_Sym {
         timeout-ms = <50>;
