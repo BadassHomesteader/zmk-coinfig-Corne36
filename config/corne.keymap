@@ -32,6 +32,7 @@
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 / {
     behaviors {
+//hm is homerow modifiers
         hm: homerow_mods {
           compatible = "zmk,behavior-hold-tap";
           label = "HOMEROW_MODS";
@@ -42,7 +43,7 @@
           bindings = <&kp>, <&kp>;
         };
 
-//htl is no longer working
+//htl momentary layer on hold
     htl: tap_dance_layer {
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_LAYERS_R";
@@ -64,6 +65,7 @@
         bindings = <&kp>, <&kp>;
     };
 
+// Hold-Tap for 200mm = 0.2 Sec 
     ht2: hold-tap-200 {
         compatible = "zmk,behavior-hold-tap";
         label = "GLOBAL_QUICK_TAP";
@@ -75,6 +77,7 @@
         bindings = <&kp>, <&kp>;
     };
 
+// Hold-Tap for 300mm = 0.3 Sec 
     ht3: hold-tap-300 {
         compatible = "zmk,behavior-hold-tap";
         label = "GLOBAL_QUICK_TAP";
@@ -86,6 +89,7 @@
         bindings = <&kp>, <&kp>;
     };
 
+// Hold-Tap for 400mm = 0.4 Sec 
     ht4: hold-tap-400 {
         compatible = "zmk,behavior-hold-tap";
         label = "GLOBAL_QUICK_TAP";
@@ -97,6 +101,7 @@
         bindings = <&kp>, <&kp>;
     };
 
+// Hold-Tap for 500mm = 0.5 Sec 
     ht5: hold-tap-500 {
         compatible = "zmk,behavior-hold-tap";
         label = "GLOBAL_QUICK_TAP";
@@ -108,6 +113,7 @@
         bindings = <&kp>, <&kp>;
     };
 
+// Hold-Tap for 600mm = 0.6 Sec 
     ht6: hold-tap-600 {
         compatible = "zmk,behavior-hold-tap";
         label = "GLOBAL_QUICK_TAP";
@@ -255,10 +261,10 @@
 &none        &kp Q        &kp W         &kp E          &kp R         &kp T                                              &kp Y         &kp U        &kp I         &kp O        &kp SQT         &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                                   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //      |      A      |      S      |      D      |      F      |     G       |                                   |      H      |     J       |     K       |      L      |     P       |  
-&none        &kp A      &hm LGUI S    &hm LALT D    &hm LCTRL F      &kp G                                             &kp H      &hm RCTRL J    &hm RALT K    &hm RGUI L  &ht5 LC(PSCRN) P   &none
+&none    &ht5 LC(A) A  &ht5 LC(S) S    &hm LALT D    &hm LCTRL F      &kp G                                             &kp H      &hm RCTRL J    &hm RALT K    &hm RGUI L  &ht5 LC(PSCRN) P   &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                                   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //      |      Z      |      X      |      C      |      V      |      B      |                                   |      N      |     M       |     ,       |       .     |      ?      | 
-&none     &ht3 LC(Z) Z  &ht3 LC(X) X  &ht3 LC(C) C  &ht4 LC(V) V     &kp B                                            &kp N         &kp M       &kp COMMA       &kp DOT     &kp QMARK        &none
+&none     &ht5 LC(Z) Z  &ht5 LC(X) X  &ht5 LC(C) C  &ht5 LC(V) V     &kp B                                            &kp N         &kp M       &kp COMMA       &kp DOT     &kp QMARK        &none
 //      ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────╮       ╭─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                                |    Enter    |     Num     |    Shift    |       |    Space    |   Bksp NAV  |  Enter Nav  |
                                              &htl SYM RET  &htl NUM LC(BSPC) &kp RSHIFT    &hm LC(LS(LALT)) SPACE &htl NAV BSPC &htl HYPER RET
