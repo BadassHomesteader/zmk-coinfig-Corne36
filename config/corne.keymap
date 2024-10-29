@@ -89,18 +89,6 @@
         bindings = <&kp>, <&kp>;
     };
 
-// Hold-Tap for 400mm = 0.4 Sec 
-    ht4: hold-tap-400 {
-        compatible = "zmk,behavior-hold-tap";
-        label = "GLOBAL_QUICK_TAP";
-        #binding-cells = <2>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <400>;
-        quick-tap-ms = <125>;
-        global-quick-tap;
-        bindings = <&kp>, <&kp>;
-    };
-
 // Hold-Tap for 500mm = 0.5 Sec 
     ht5: hold-tap-500 {
         compatible = "zmk,behavior-hold-tap";
@@ -144,6 +132,18 @@
         #binding-cells = <2>;
         flavor = "tap-preferred";
         tapping-term-ms = <1000>;
+        quick-tap-ms = <125>;
+        global-quick-tap;
+        bindings = <&kp>, <&kp>;
+    };
+
+// Hold-Tap for 1500mm = 1.5 Sec 
+    ht15: hold-tap-1500 {
+        compatible = "zmk,behavior-hold-tap";
+        label = "GLOBAL_QUICK_TAP";
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <1500>;
         quick-tap-ms = <125>;
         global-quick-tap;
         bindings = <&kp>, <&kp>;
@@ -285,7 +285,7 @@
 &none        &kp Q        &kp W         &kp E          &kp R         &kp T                                              &kp Y         &kp U        &kp I         &kp O        &kp SQT         &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                                   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //      |      A      |      S      |      D      |      F      |     G       |                                   |      H      |     J       |     K       |      L      |     P       |  
-&none  &ht10 LC(A) A  &ht10 LC(S) S    &hm LALT D    &hm LCTRL F      &kp G                                             &kp H      &hm RCTRL J    &hm RALT K    &hm RGUI L  &ht5 LC(PSCRN) P   &none
+&none  &ht15 LC(A) A  &ht15 LC(S) S    &hm LALT D    &hm LCTRL F      &kp G                                             &kp H      &hm RCTRL J    &hm RALT K    &hm RGUI L  &ht5 LC(PSCRN) P   &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                                   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //      |      Z      |      X      |      C      |      V      |      B      |                                   |      N      |     M       |     ,       |       .     |      ?      | 
 &none   &ht10 LC(Z) Z  &ht10 LC(X) X  &ht10 LC(C) C  &ht10 LC(V) V     &kp B                                            &kp N         &kp M       &kp COMMA       &kp DOT     &kp QMARK        &none
