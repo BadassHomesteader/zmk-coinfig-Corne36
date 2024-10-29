@@ -304,10 +304,10 @@
 &none        &kp Q        &kp W         &kp E          &kp R         &kp T                                              &kp Y         &kp U        &kp I         &kp O        &kp SQT         &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                                   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //      |      A      |      S      |      D      |      F      |     G       |                                   |      H      |     J       |     K       |      L      |     P       |  
-&none  &ht20 LC(A) A  &ht20 LC(S) S    &hm LALT D    &hm LCTRL F      &kp G                                             &kp H      &hm RCTRL J    &hm RALT K    &hm RGUI L  &ht5 LC(PSCRN) P   &none
+&none       &kp  A         &kp  S     &hm LALT D    &hm LCTRL F      &kp G                                             &kp H      &hm RCTRL J    &hm RALT K    &hm RGUI L  &ht5 LC(PSCRN) P   &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                                   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //      |      Z      |      X      |      C      |      V      |      B      |                                   |      N      |     M       |     ,       |       .     |      ?      | 
-&none   &ht10 LC(Z) Z  &ht10 LC(X) X  &ht10 LC(C) C  &ht10 LC(V) V     &kp B                                            &kp N         &kp M       &kp COMMA       &kp DOT     &kp QMARK        &none
+&none       &kp   Z        &kp   X      &kp   C       &kp   V        &kp B                                            &kp N         &kp M       &kp COMMA       &kp DOT     &kp QMARK        &none
 //      ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────╮       ╭─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                                |    Enter    |     Num     |    Shift    |       |    Space    |   Bksp NAV  |  Enter Nav  |
                                              &htl SYM RET  &htl NUM LC(BSPC) &kp RSHIFT    &hm LC(LS(LALT)) SPACE &htl NAV BSPC &htl HYPER RET
