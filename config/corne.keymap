@@ -113,8 +113,20 @@
         bindings = <&kp>, <&kp>;
     };
 
-// Hold-Tap for 600mm = 0.6 Sec 
-    ht6: hold-tap-600 {
+// Hold-Tap for 700mm = 0.7 Sec 
+    ht7: hold-tap-600 {
+        compatible = "zmk,behavior-hold-tap";
+        label = "GLOBAL_QUICK_TAP";
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <600>;
+        quick-tap-ms = <125>;
+        global-quick-tap;
+        bindings = <&kp>, <&kp>;
+    };
+
+// Hold-Tap for 1000mm = 1.0 Sec 
+    ht10: hold-tap-600 {
         compatible = "zmk,behavior-hold-tap";
         label = "GLOBAL_QUICK_TAP";
         #binding-cells = <2>;
@@ -261,10 +273,10 @@
 &none        &kp Q        &kp W         &kp E          &kp R         &kp T                                              &kp Y         &kp U        &kp I         &kp O        &kp SQT         &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                                   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //      |      A      |      S      |      D      |      F      |     G       |                                   |      H      |     J       |     K       |      L      |     P       |  
-&none    &ht5 LC(A) A  &ht5 LC(S) S    &hm LALT D    &hm LCTRL F      &kp G                                             &kp H      &hm RCTRL J    &hm RALT K    &hm RGUI L  &ht5 LC(PSCRN) P   &none
+&none  &ht10 LC(A) A  &ht10 LC(S) S    &hm LALT D    &hm LCTRL F      &kp G                                             &kp H      &hm RCTRL J    &hm RALT K    &hm RGUI L  &ht5 LC(PSCRN) P   &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                                   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //      |      Z      |      X      |      C      |      V      |      B      |                                   |      N      |     M       |     ,       |       .     |      ?      | 
-&none     &ht5 LC(Z) Z  &ht5 LC(X) X  &ht5 LC(C) C  &ht5 LC(V) V     &kp B                                            &kp N         &kp M       &kp COMMA       &kp DOT     &kp QMARK        &none
+&none   &ht10 LC(Z) Z  &ht10 LC(X) X  &ht10 LC(C) C  &ht10 LC(V) V     &kp B                                            &kp N         &kp M       &kp COMMA       &kp DOT     &kp QMARK        &none
 //      ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────╮       ╭─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                                |    Enter    |     Num     |    Shift    |       |    Space    |   Bksp NAV  |  Enter Nav  |
                                              &htl SYM RET  &htl NUM LC(BSPC) &kp RSHIFT    &hm LC(LS(LALT)) SPACE &htl NAV BSPC &htl HYPER RET
