@@ -310,7 +310,7 @@
 &none       &kp   Z        &kp   X      &kp   C       &kp   V        &kp B                                            &kp N         &kp M       &kp COMMA       &kp DOT     &kp QMARK        &none
 //      ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────╮       ╭─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                                |    Enter    |     Num     |    Shift    |       |    Space    |   Bksp NAV  |  Enter Nav  |
-                                             &htl SYM RET  &htl NUM LC(BSPC) &kp RSHIFT    &hm LC(LS(LALT)) SPACE &htl NAV BSPC &htl HYPER RET
+                                                   &htl SYM RET   &htl NUM       &kp RSHIFT    &hm LC(LS(LALT)) SPACE &htl NAV BSPC &htl HYPER RET
 //                                                ╰─────────────┴─────────────┴─────────────╯       ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
@@ -323,10 +323,10 @@
 &none     &to DEFAULT      &none        &none     &kp LA(EQUAL)      &kp TAB                                       &kp N7       &kp N8        &kp N9        &kp EQUAL    &kp UNDER         &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //      |             |             |             |             |             |                              |      4      |     5       |     6       |      21     |     22      |      
-&none      &kp LC(A)     &kp LC(S)     &kp LC(B)     &kp LC(C)      &kp LC(V)                                      &kp N4       &kp N5        &kp N6        &kp PLUS     &kp KP_MULTIPLY   &none
+&none      &kp LC(A)     &kp LC(S)   &kp LA(TAB)     &kp LC(C)      &kp LC(V)                                      &kp N4       &kp N5        &kp N6        &kp PLUS     &kp KP_MULTIPLY   &none
 //      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //      |             |             |             |             |             |                              |      1      |     2       |     3       |      33     |     34      |      
-&none      &kp LC(Z)     &kp LC(X)       &none        &none         &kp LC(B)                                     &kp N1       &kp N2        &kp N3       &kp MINUS     &kp SLASH         &none
+&none      &kp LC(Z)     &kp LC(X)       &none     &kp LC(BSPC)     &none                                     &kp N1       &kp N2        &kp N3       &kp MINUS     &kp SLASH         &none
 //      ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────╮  ╭─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                                |             |             |             |  |             |             |             |
                                                      &trans        &trans       &trans             &kp DOT      &kp  BSPC      &kp N0
