@@ -310,7 +310,7 @@
 &none       &kp   Z        &kp   X      &kp   C       &kp   V        &kp B                                            &kp N         &kp M       &kp COMMA       &kp DOT     &kp QMARK        &none
 //      ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┬─────────────╮       ╭─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                                                |    Enter    |     Num     |    Shift    |       |    Space    |   Bksp NAV  |  Enter Nav  |
-                                                   &htl SYM RET   &htl NUM       &kp RSHIFT    &hm LC(LS(LALT)) SPACE &htl NAV BSPC &htl HYPER RET
+                                                   &htl SYM RET   &htl NUM  NUM     &kp RSHIFT    &hm LC(LS(LALT)) SPACE &htl NAV BSPC &htl HYPER RET
 //                                                ╰─────────────┴─────────────┴─────────────╯       ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
