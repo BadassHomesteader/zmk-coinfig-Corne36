@@ -101,30 +101,6 @@
         bindings = <&kp>, <&kp>;
     };
 
-// Hold-Tap for 600mm = 0.6 Sec 
-    ht6: hold-tap-600 {
-        compatible = "zmk,behavior-hold-tap";
-        label = "GLOBAL_QUICK_TAP";
-        #binding-cells = <2>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <600>;
-        quick-tap-ms = <125>;
-        global-quick-tap;
-        bindings = <&kp>, <&kp>;
-    };
-
-// Hold-Tap for 700mm = 0.7 Sec 
-    ht7: hold-tap-700 {
-        compatible = "zmk,behavior-hold-tap";
-        label = "GLOBAL_QUICK_TAP";
-        #binding-cells = <2>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <700>;
-        quick-tap-ms = <125>;
-        global-quick-tap;
-        bindings = <&kp>, <&kp>;
-    };
-
 // Hold-Tap for 1000mm = 1.0 Sec 
     ht10: hold-tap-1000 {
         compatible = "zmk,behavior-hold-tap";
