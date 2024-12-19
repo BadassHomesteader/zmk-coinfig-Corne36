@@ -33,15 +33,38 @@
 / {
     behaviors {
 //hm is homerow modifiers
-        hm: homerow_mods {
-          compatible = "zmk,behavior-hold-tap";
-          label = "HOMEROW_MODS";
-          #binding-cells = <2>;
-          tapping-term-ms = <500>;
-          quick-tap-ms = <0>;
-          flavor = "tap-preferred";
-          bindings = <&kp>, <&kp>;
-        };
+//        hm: homerow_mods {
+//          compatible = "zmk,behavior-hold-tap";
+//          label = "HOMEROW_MODS";
+//          #binding-cells = <2>;
+//          tapping-term-ms = <500>;
+//          quick-tap-ms = <0>;
+//          flavor = "tap-preferred";
+//          bindings = <&kp>, <&kp>;
+//        };
+
+hm: homerow_mods {
+    compatible = "zmk,behavior-hold-tap";
+    label = "HOMEROW_MODS";
+    #binding-cells = <2>;
+    tapping-term-ms = <200>;    // Reduced from 500ms for faster response
+    quick-tap-ms = <0>;
+    flavor = "tap-preferred";
+    bindings = <&kp>, <&kp>;
+    
+    // Numbers correspond to the key positions in your keyboard matrix
+    hold-trigger-key-positions = 
+        13    // A (for Ctrl+A) All
+        29    // B (for Ctrl+B) Bold
+        27    // C (for Ctrl+C) Copy
+        15    // D (for Ctrl+D) Fill Down
+        4     // R (for Ctrl+R) Fill Right
+        5     // T (for Ctrl+T) Table or Tab
+        28    // V (for Ctrl+V) Paste
+        26    // X (for Ctrl+X) Cut
+        25    // Z (for Ctrl+Z) Undo
+    >;
+};
 
 //htl momentary layer on hold
     htl: tap_dance_layer {
