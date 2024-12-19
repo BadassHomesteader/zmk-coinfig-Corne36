@@ -169,6 +169,13 @@
   combos {
     compatible = "zmk,combos";
 
+combo_to_base {
+    timeout-ms = <75>;
+    key-positions = <1 10>;  // Top left and right corners
+    bindings = <&to DEFAULT>;
+    layers = <1 2 3 4 5 6>;  // All non-base layers
+    };
+
     combo_esc_left {
       timeout-ms = <COMBO_TIMEOUT>;
       key-positions = <3 4 5>;
@@ -264,6 +271,21 @@
         key-positions = <33 34>;
         bindings = <&kp LS(LC(LA(N9)))>;
         layers = <3 5>;
+    };
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Combos - Window Organizer
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+combo_win_left {
+    timeout-ms = <COMBO_TIMEOUT>;
+    key-positions = <1 13>;  // Q+A
+    bindings = <&kp LG(LEFT)>;
+    };
+
+combo_win_right {
+    timeout-ms = <COMBO_TIMEOUT>;
+    key-positions = <10 22>;  // P+;
+    bindings = <&kp LG(RIGHT)>;
     };
 
   };
