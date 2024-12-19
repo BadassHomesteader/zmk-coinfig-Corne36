@@ -278,13 +278,13 @@ combo_to_base {
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 combo_win_left {
     timeout-ms = <COMBO_TIMEOUT>;
-    key-positions = <1 13>;  // Q+A
+    key-positions = <1 13>;  
     bindings = <&kp LG(LEFT)>;
     };
 
 combo_win_right {
     timeout-ms = <COMBO_TIMEOUT>;
-    key-positions = <10 22>;  // P+;
+    key-positions = <10 22>;  
     bindings = <&kp LG(RIGHT)>;
     };
 
