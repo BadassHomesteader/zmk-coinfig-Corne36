@@ -28,6 +28,11 @@
 #define BT       6
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Variables
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#define COMBO_TIMEOUT 75 
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Mods
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 / {
@@ -165,97 +170,97 @@
     compatible = "zmk,combos";
 
     combo_esc_left {
-      timeout-ms = <50>;
+      timeout-ms = <COMBO_TIMEOUT>;
       key-positions = <3 4 5>;
       bindings = <&kp ESC>;
       layers = <0>;
     };
 
     combo_esc_right {
-      timeout-ms = <50>;
+      timeout-ms = <COMBO_TIMEOUT>;
       key-positions = <6 7 8>;
       bindings = <&kp ESC>;
       layers = <0>;
     };
 
     combo_func {
-      timeout-ms = <50>;
+      timeout-ms = <COMBO_TIMEOUT>;
       key-positions = <2 3 4>;
       bindings = <&mo FUNC>;
     };
 
     combo_del_right {
-      timeout-ms = <50>;
+      timeout-ms = <COMBO_TIMEOUT>;
       key-positions = <7 8>;
       bindings = <&kp DEL>;
       layers = <0>;
     };
 
     combo_del_left {
-      timeout-ms = <50>;
+      timeout-ms = <COMBO_TIMEOUT>;
       key-positions = <3 4>;
       bindings = <&kp DEL>;
       layers = <0>;
     };
 
     combo_CTRLdel {
-        timeout-ms = <50>;
+        timeout-ms = <COMBO_TIMEOUT>;
         key-positions = <37 40>;
         bindings = <&kp LC(BSPC)>;
         layers = <0>;
     };
 
     // combo_Layer_Num {
-    //     timeout-ms = <50>;
+    //     timeout-ms = <COMBO_TIMEOUT>;
     //     key-positions = <30 31>;
     //     bindings = <&to NUM>;
     //     layers = <0>;
     // };
 
     combo_Layer_Sym {
-        timeout-ms = <50>;
+        timeout-ms = <COMBO_TIMEOUT>;
         key-positions = <1 31>;
         bindings = <&to SYM>;
         layers = <0>;
     };
 
     combo_Layer_Nav {
-        timeout-ms = <50>;
+        timeout-ms = <COMBO_TIMEOUT>;
         key-positions = <1 32>;
         bindings = <&to NAV>;
         layers = <0>;
     };
 
     combo_Layer_Func {
-        timeout-ms = <50>;
+        timeout-ms = <COMBO_TIMEOUT>;
         key-positions = <1 18>;
         bindings = <&to FUNC>;
         layers = <0>;
     };
 
     combo_Layer_Hyper {
-        timeout-ms = <50>;
+        timeout-ms = <COMBO_TIMEOUT>;
         key-positions = <1 19>;
         bindings = <&to HYPER>;
         layers = <0>;
     };
 
     combo_Layer_BT {
-        timeout-ms = <50>;
+        timeout-ms = <COMBO_TIMEOUT>;
         key-positions = <5 6>;
         bindings = <&to BT>;
         layers = <0>;
     };
 
     combo_mouse_l {
-        timeout-ms = <50>;
+        timeout-ms = <75>;
         key-positions = <31 32>;
         bindings = <&kp LS(LC(LA(N7)))>;
         layers = <3 5>;
     };
 
     combo_mouse_r {
-        timeout-ms = <50>;
+        timeout-ms = <COMBO_TIMEOUT>;
         key-positions = <33 34>;
         bindings = <&kp LS(LC(LA(N9)))>;
         layers = <3 5>;
