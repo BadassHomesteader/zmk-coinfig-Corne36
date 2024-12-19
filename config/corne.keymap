@@ -53,7 +53,7 @@ hm: homerow_mods {
     bindings = <&kp>, <&kp>;
     
     // Numbers correspond to the key positions in your keyboard matrix
-    hold-trigger-key-positions = <
+    hold-trigger-key-positions =<
         13,    // A (for Ctrl+A) All
         29,    // B (for Ctrl+B) Bold
         27,    // C (for Ctrl+C) Copy
