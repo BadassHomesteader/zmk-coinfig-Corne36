@@ -169,20 +169,15 @@
   combos {
     compatible = "zmk,combos";
 
-combo_to_base {
-    timeout-ms = <75>;
-    key-positions = <1 10>;  // Top left and right corners
-    bindings = <&to DEFAULT>;
-    layers = <1 2 3 4 5 6>;  // All non-base layers
+// Move to Base Layer
+    combo_to_base {
+        timeout-ms = <75>;
+        key-positions = <1 10>;  // Top left and right corners
+        bindings = <&to DEFAULT>;
+        layers = <1 2 3 4 5 6>;  // All non-base layers
     };
 
-    combo_esc_left {
-      timeout-ms = <COMBO_TIMEOUT>;
-      key-positions = <3 4 5>;
-      bindings = <&kp ESC>;
-      layers = <0>;
-    };
-
+// Esc Button on Right Keyboard
     combo_esc_right {
       timeout-ms = <COMBO_TIMEOUT>;
       key-positions = <6 7 8>;
@@ -190,12 +185,22 @@ combo_to_base {
       layers = <0>;
     };
 
+// Esc Button on Left Keyboard
+    combo_esc_left {
+      timeout-ms = <COMBO_TIMEOUT>;
+      key-positions = <3 4 5>;
+      bindings = <&kp ESC>;
+      layers = <0>;
+    };
+
+// Function Layer
     combo_func {
       timeout-ms = <COMBO_TIMEOUT>;
       key-positions = <2 3 4>;
       bindings = <&mo FUNC>;
     };
 
+// Delete Button on Right Keyboard
     combo_del_right {
       timeout-ms = <COMBO_TIMEOUT>;
       key-positions = <7 8>;
@@ -203,6 +208,7 @@ combo_to_base {
       layers = <0>;
     };
 
+// Delete Button on Left Keyboard
     combo_del_left {
       timeout-ms = <COMBO_TIMEOUT>;
       key-positions = <3 4>;
@@ -210,6 +216,7 @@ combo_to_base {
       layers = <0>;
     };
 
+// Word Delete Backspace
     combo_CTRLdel {
         timeout-ms = <COMBO_TIMEOUT>;
         key-positions = <37 40>;
@@ -217,6 +224,7 @@ combo_to_base {
         layers = <0>;
     };
 
+// Switch to Number Layer
     // combo_Layer_Num {
     //     timeout-ms = <COMBO_TIMEOUT>;
     //     key-positions = <30 31>;
@@ -224,6 +232,7 @@ combo_to_base {
     //     layers = <0>;
     // };
 
+// Switch to Symbol Layer
     combo_Layer_Sym {
         timeout-ms = <COMBO_TIMEOUT>;
         key-positions = <1 31>;
@@ -231,6 +240,7 @@ combo_to_base {
         layers = <0>;
     };
 
+// Switch to Navigation Layer
     combo_Layer_Nav {
         timeout-ms = <COMBO_TIMEOUT>;
         key-positions = <1 32>;
@@ -238,6 +248,7 @@ combo_to_base {
         layers = <0>;
     };
 
+// Switch to Function Layer
     combo_Layer_Func {
         timeout-ms = <COMBO_TIMEOUT>;
         key-positions = <1 18>;
@@ -245,6 +256,7 @@ combo_to_base {
         layers = <0>;
     };
 
+// Switch to Hyper Layer
     combo_Layer_Hyper {
         timeout-ms = <COMBO_TIMEOUT>;
         key-positions = <1 19>;
@@ -252,6 +264,7 @@ combo_to_base {
         layers = <0>;
     };
 
+// Switch to Bluetooth Layer
     combo_Layer_BT {
         timeout-ms = <COMBO_TIMEOUT>;
         key-positions = <5 6>;
@@ -259,6 +272,7 @@ combo_to_base {
         layers = <0>;
     };
 
+// Mouse click left
     combo_mouse_l {
         timeout-ms = <75>;
         key-positions = <31 32>;
@@ -266,6 +280,7 @@ combo_to_base {
         layers = <3 5>;
     };
 
+// Mouse click right
     combo_mouse_r {
         timeout-ms = <COMBO_TIMEOUT>;
         key-positions = <33 34>;
