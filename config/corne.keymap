@@ -238,12 +238,12 @@
     };
 
 // Switch to Number Layer
-    // combo_Layer_Num {
-    //     timeout-ms = <COMBO_TIMEOUT>;
-    //     key-positions = <30 31>;  // Keys: N M
-    //     bindings = <&to NUM>;  // 
-    //     layers = <0>;
-    // };
+    combo_Layer_Num {
+         timeout-ms = <COMBO_TIMEOUT>;
+         key-positions = <1 30>;  // Keys: Q N
+         bindings = <&to NUM>;  // 
+         layers = <0>;
+     };
 
 // Switch to Symbol Layer
     combo_Layer_Sym {
