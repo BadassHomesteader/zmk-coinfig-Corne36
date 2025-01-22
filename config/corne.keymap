@@ -4,11 +4,24 @@
  * SPDX-License-Identifier: MIT
  */
 
-// Last update 2023.07.07
+// Last update 2025.01.21_1946
 
+//-----------------------------------------------------------------------------------------
+// Meh = Ctrl + Shift + Alt
+// Windows Meh = Shift + Control + Windows
+// Hyper = Shift + Control + Alt + Windows
+//-----------------------------------------------------------------------------------------
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // wish list
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // window switcher via meh key space bar - Alt Tab but need to hold atl?
 // add more hyper keys to layer
+// &hyper {
+//     bindings = <&kp LC(LS(LA(LGUI(SPACE))))>;
+// };
+// 
 // is there a way to define hyper vs having to do all keys like I am now
 //
 
@@ -180,111 +193,111 @@
 // Esc Button on Right Keyboard
     combo_esc_right {
       timeout-ms = <COMBO_TIMEOUT>;
-      key-positions = <6 7 8>;
-      bindings = <&kp ESC>;
+      key-positions = <6 7 8>;  // Keys: Y U I
+      bindings = <&kp ESC>;  // Esc Key
       layers = <0>;
     };
 
 // Esc Button on Left Keyboard
     combo_esc_left {
       timeout-ms = <COMBO_TIMEOUT>;
-      key-positions = <3 4 5>;
-      bindings = <&kp ESC>;
+      key-positions = <3 4 5>;  // Keys: E R T
+      bindings = <&kp ESC>;  // Esc Key
       layers = <0>;
     };
 
 // Function Layer
     combo_func {
       timeout-ms = <COMBO_TIMEOUT>;
-      key-positions = <2 3 4>;
-      bindings = <&mo FUNC>;
+      key-positions = <2 3 4>;  // Keys: W E R
+      bindings = <&mo FUNC>;  // Funtion Layer
     };
 
 // Delete Button on Right Keyboard
     combo_del_right {
       timeout-ms = <COMBO_TIMEOUT>;
-      key-positions = <7 8>;
-      bindings = <&kp DEL>;
+      key-positions = <7 8>;  // Keys: U I
+      bindings = <&kp DEL>;  // Delete Key
       layers = <0>;
     };
 
 // Delete Button on Left Keyboard
     combo_del_left {
       timeout-ms = <COMBO_TIMEOUT>;
-      key-positions = <3 4>;
-      bindings = <&kp DEL>;
+      key-positions = <3 4>;  // Keys: E R
+      bindings = <&kp DEL>;  // Delete Key
       layers = <0>;
     };
 
 // Word Delete Backspace
     combo_CTRLdel {
         timeout-ms = <COMBO_TIMEOUT>;
-        key-positions = <37 40>;
-        bindings = <&kp LC(BSPC)>;
+        key-positions = <37 40>;  // Keys: Both Middle Thumbs
+        bindings = <&kp LC(BSPC)>;  // 
         layers = <0>;
     };
 
 // Switch to Number Layer
     // combo_Layer_Num {
     //     timeout-ms = <COMBO_TIMEOUT>;
-    //     key-positions = <30 31>;
-    //     bindings = <&to NUM>;
+    //     key-positions = <30 31>;  // Keys: N M
+    //     bindings = <&to NUM>;  // 
     //     layers = <0>;
     // };
 
 // Switch to Symbol Layer
     combo_Layer_Sym {
         timeout-ms = <COMBO_TIMEOUT>;
-        key-positions = <1 31>;
-        bindings = <&to SYM>;
+        key-positions = <1 31>;  // Keys: Q M
+        bindings = <&to SYM>;  // 
         layers = <0>;
     };
 
 // Switch to Navigation Layer
     combo_Layer_Nav {
         timeout-ms = <COMBO_TIMEOUT>;
-        key-positions = <1 32>;
-        bindings = <&to NAV>;
+        key-positions = <1 32>;  // Keys: Q ,
+        bindings = <&to NAV>;  // 
         layers = <0>;
     };
 
 // Switch to Function Layer
     combo_Layer_Func {
         timeout-ms = <COMBO_TIMEOUT>;
-        key-positions = <1 18>;
-        bindings = <&to FUNC>;
+        key-positions = <1 18>;  // Keys: Q H
+        bindings = <&to FUNC>;  // 
         layers = <0>;
     };
 
 // Switch to Hyper Layer
     combo_Layer_Hyper {
         timeout-ms = <COMBO_TIMEOUT>;
-        key-positions = <1 19>;
-        bindings = <&to HYPER>;
+        key-positions = <1 19>;  // Keys: Q J
+        bindings = <&to HYPER>;  // 
         layers = <0>;
     };
 
 // Switch to Bluetooth Layer
     combo_Layer_BT {
         timeout-ms = <COMBO_TIMEOUT>;
-        key-positions = <5 6>;
-        bindings = <&to BT>;
+        key-positions = <5 6>;  // Keys: T Y
+        bindings = <&to BT>;  // 
         layers = <0>;
     };
 
 // Mouse click left
     combo_mouse_l {
         timeout-ms = <COMBO_TIMEOUT>;
-        key-positions = <31 32>;
-        bindings = <&kp LS(LC(LA(N7)))>;
+        key-positions = <31 32>;  // Keys: M ,
+        bindings = <&kp LS(LC(LA(N7)))>;  // 
         layers = <3 5>;
     };
 
 // Mouse click right
     combo_mouse_r {
         timeout-ms = <COMBO_TIMEOUT>;
-        key-positions = <33 34>;
-        bindings = <&kp LS(LC(LA(N9)))>;
+        key-positions = <33 34>;  // Keys: . ?
+        bindings = <&kp LS(LC(LA(N9)))>;  // 
         layers = <3 5>;
     };
 
