@@ -171,7 +171,7 @@
 
 // Move to Base Layer
     combo_to_base {
-        timeout-ms = <75>;
+        timeout-ms = <COMBO_TIMEOUT>;
         key-positions = <1 10>;  // Top left and right corners
         bindings = <&to DEFAULT>;
         layers = <1 2 3 4 5 6>;  // All non-base layers
@@ -274,7 +274,7 @@
 
 // Mouse click left
     combo_mouse_l {
-        timeout-ms = <75>;
+        timeout-ms = <COMBO_TIMEOUT>;
         key-positions = <31 32>;
         bindings = <&kp LS(LC(LA(N7)))>;
         layers = <3 5>;
